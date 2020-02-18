@@ -1,0 +1,62 @@
+html {
+    margin: 0px;
+    overflow-x: hidden;
+    background-color: #120F22;
+}
+
+#banner {
+    background-color: #19152F;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+#falconhacks-logo {
+    height: 10vh;
+    padding-left: 1.5vw;   
+}
+
+#falconhacks-banner-header {
+    height: 210px;
+    width: 980px;
+    color: #FFF;
+    font-family: "Tw Cen MT";
+    font-size: 190px;
+    font-weight: 5;
+    line-height: 207px;
+    text-align: center;
+}
+
+#falconhacks-subtext-header {
+    height: 89px;
+    width: 643px;
+    color: #FFF;
+    font-family: "Tw Cen MT";
+    font-size: 82px;
+    font-weight: 5;
+    line-height: 89px;
+    text-align: center;
+}
+
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav > li {
+    display: inline;
+    float: left;
+}
+
+#nav > li > a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}
+
+#vanta-trunk {
+    height: 100vh;
+    width: 100vw;
+}

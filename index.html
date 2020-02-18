@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Falcon Hacks</title>
+        <meta charset=UTF-8>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="p5.min.js"></script>
+        <script src="vanta.trunk.min.js"></script>
+    </head>
+    <body>
+        <script>
+            window.onload = function () {
+                VANTA.TRUNK({
+                    el: "#vanta-trunk",
+                    mouseControls: true,
+                    touchControls: true,
+                    minHeight: 200.00,
+                    minWidth: 200.00,
+                    scale: 1.00,
+                    scaleMobile: 1.00,
+                    color: 0xb3a9,
+                    backgroundColor: 0x000000,
+                    chaos: 1.50
+                });
+            }
+        </script>
+        <header id="banner">
+            <img id="falconhacks-logo" src="FalconHacks logo.png">
+            <ul id="nav">
+                <li><a href="nothin yet">Home</a></li>
+                <li><a href="nothin yet">Schedule</a></li>
+                <li><a href="nothin yet">Announcements</a></li>
+                <li><a href="nothin yet">Our Team</a></li>
+            </ul>
+            <div id="vanta-trunk"></div>
+            <h1 id="falconhacks-banner-header">FalconHacks</h1>
+            <h3 id="falconhacks-subtext-header">by Foothill CS Club</h3>
+        </header>
+    </body>
+</html>
