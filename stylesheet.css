@@ -1,62 +1,193 @@
+@font-face {
+    font-family: Manrope;
+    src: url("manrope/Manrope-Regular.otf");
+}
+
+@font-face {
+    font-family: Manrope;
+    font-weight: bold;
+    src: url("manrope/Manrope-Bold.otf");
+}
+
+@font-face {
+    font-family: Manrope;
+    font-weight: 999;
+    src: url("manrope/Manrope-SemiBold.otf");
+}
+
 html {
     margin: 0px;
     overflow-x: hidden;
     background-color: #120F22;
 }
 
-#banner {
-    background-color: #19152F;
-    width: 100vw;
-    height: 100vh;
+body {
     top: 0;
     left: 0;
 }
 
-#falconhacks-logo {
+#banner {
+    background-color: #120F22;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+#topbar {
+    position: sticky;
+    width: 100vw;
     height: 10vh;
-    padding-left: 1.5vw;   
 }
 
-#falconhacks-banner-header {
-    height: 210px;
-    width: 980px;
-    color: #FFF;
-    font-family: "Tw Cen MT";
-    font-size: 190px;
-    font-weight: 5;
-    line-height: 207px;
-    text-align: center;
+
+#falconhacks-logo {
+    display: inline;
+    height: 10vh;
+    left: 2vw;
 }
 
-#falconhacks-subtext-header {
-    height: 89px;
-    width: 643px;
-    color: #FFF;
-    font-family: "Tw Cen MT";
-    font-size: 82px;
-    font-weight: 5;
-    line-height: 89px;
-    text-align: center;
+.sponsor-img {
+    height: 10vh;
+}
+
+#logo-div {
+    display: inline;
+    float: left;
+}
+
+#logos {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+}
+
+#logos > li {
+    display: inline;
+    float: left;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+
+#nav-div {
+    display: inline-block;
+    float: right;
 }
 
 #nav {
+    display: inline;
     list-style-type: none;
     margin: 0;
-    padding: 0;
 }
 
 #nav > li {
     display: inline;
     float: left;
+    padding-left: 2vh;
+    padding-right: 2vh;
 }
 
 #nav > li > a {
     display: block;
-    padding: 8px;
+    padding: 0px 8px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    font-family: Manrope;
+    font-size: 3vh;
+    line-height: 10vh;
+}
+
+#nav > li > a:hover {
     background-color: #dddddd;
+    color: #120f22;
+}
+
+#banner-body {
+    position: relative;
+    height: 90vh;
+}
+
+#banner-text {
+    width: 60vw;
+    position: absolute;
+}
+
+#signup-form {
+    position: relative;
+    display: inline-block;
+    width: 40vw;
+    float: right;
+    margin: 0;
+}
+
+#falconhacks-banner-header {
+    height: 30vh;
+    width: 100%;
+    line-height: 252px;
+    color: #FFF;
+    font-family: Manrope;
+    font-weight: 999;
+    font-size: 100px;
+    z-index: 5;
+    position: relative;
+    margin: 0;
+    top: 15vh;
+    left: 4vw;
+    display: inline-block;
+}
+
+#falconhacks-subtext-header {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 50px;
+    font-weight: 5;
+    line-height: 175px;
+    margin: 0;
+    left: 4vw;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    z-index: 5;
+}
+
+#date-location {
+    left: 4vw;
+    position: relative;
+    z-index: 5;
+}
+
+#date-location > table {
+    font-family: Manrope;
+    color: white;
+    width: 25vw;
+}
+
+#date-location-header {
+    font-size: 30px;
+    text-align: left;
 }
 
 #vanta-trunk {
-    height: 100vh;
-    width: 100vw;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    height: 70vh;
+    width: 70vh;
+    z-index: 1;
+}
+
+#signup-form {
+    flex-grow: 1;
+}
+
+#signup-form > iframe::-webkit-scrollbar {
+    display: none;
+}
+
+#signup-form > iframe {
+    -ms-overflow-style: none;
+    width: 40vw;
+    height: 90vh;
 }

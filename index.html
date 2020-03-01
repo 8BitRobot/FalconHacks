@@ -12,29 +12,66 @@
             window.onload = function () {
                 VANTA.TRUNK({
                     el: "#vanta-trunk",
-                    mouseControls: true,
-                    touchControls: true,
+                    mouseControls: false,
+                    touchControls: false,
                     minHeight: 200.00,
                     minWidth: 200.00,
                     scale: 1.00,
                     scaleMobile: 1.00,
                     color: 0xb3a9,
-                    backgroundColor: 0x000000,
-                    chaos: 1.50
+                    backgroundColor: "rgba(0, 0, 0, 0)",
+                    chaos: 2.0
                 });
             }
         </script>
         <header id="banner">
-            <img id="falconhacks-logo" src="FalconHacks logo.png">
-            <ul id="nav">
-                <li><a href="nothin yet">Home</a></li>
-                <li><a href="nothin yet">Schedule</a></li>
-                <li><a href="nothin yet">Announcements</a></li>
-                <li><a href="nothin yet">Our Team</a></li>
-            </ul>
-            <div id="vanta-trunk"></div>
-            <h1 id="falconhacks-banner-header">FalconHacks</h1>
-            <h3 id="falconhacks-subtext-header">by Foothill CS Club</h3>
+            <div id="topbar">
+                <div id="logo-div"><ul id="logos">
+                    <li><img id="falconhacks-logo" src="FalconHacks logo.png"></li>
+                    <li><img class="sponsor-img" src="sponsor1.png" onerror="this.src='white circle.png'"></li>
+                    <li><img class="sponsor-img" src="sponsor1.png" onerror="this.src='white circle.png'"></li>
+                    <li><img class="sponsor-img" src="sponsor1.png" onerror="this.src='white circle.png'"></li>
+                    <li><img class="sponsor-img" src="sponsor1.png" onerror="this.src='white circle.png'"></li>
+                </ul></div>
+                <div id="nav-div"><ul id="nav">
+                    <li><a href="nothin yet">Home</a></li>
+                    <li><a href="nothin yet">Schedule</a></li>
+                    <li><a href="nothin yet">Announcements</a></li>
+                    <li><a href="nothin yet">Our Team</a></li>
+                </ul></div>
+            </div>
+            <div id="banner-body">
+                <div id="banner-text">
+                    <div id="vanta-trunk"></div>
+                    <h1 id="falconhacks-banner-header">FalconHacks</h1>
+                    <h3 id="falconhacks-subtext-header">by Foothill CS Club</h3>
+                    <div id="date-location">
+                        <table>
+                            <thead id="date-location-header">
+                                <th id="dlheader-date">Date</th>
+                                <th id="dlheader-location">Location</th>
+                            </thead >
+                            <tbody id="date-location-body">
+                                <td id="dlbody-date">
+                                    March 21st, 2020
+                                    <br>
+                                    9:00 AM - 9:00 PM
+                                </td>
+                                <td id="dlbody-location">
+                                    Foothill High School
+                                    <br>
+                                    4375 Foothill Road, Pleasanton
+                                    <br>
+                                    D-30 Mr. Sos's room
+                                </td>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="signup-form">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfsdfIDc6fXjSH2QyVcgQwcQirAjrycIzkLW8WMB_AVHqk9nw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+            </div>
         </header>
     </body>
 </html>
