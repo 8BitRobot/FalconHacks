@@ -15,10 +15,16 @@
     src: url("manrope/Manrope-SemiBold.otf");
 }
 
+:root {
+    --accent-blue: #88C0D0;
+}
+
 html {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
     background-color: #120F22;
+    font-family: Manrope;
 }
 
 body {
@@ -36,9 +42,15 @@ body {
 }
 
 #topbar {
-    position: sticky;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    left: -1vw;
     width: 100vw;
     height: 10vh;
+    top: 0;
+    background-color: #120F22;
+    z-index: 6;
 }
 
 
@@ -100,17 +112,18 @@ body {
 }
 
 #nav > li > a:hover {
-    background-color: #dddddd;
+    background-color: var(--accent-blue);
     color: #120f22;
 }
 
 #banner-body {
     position: relative;
     height: 90vh;
+    top: 10vh;
 }
 
 #banner-text {
-    width: 60vw;
+    width: 64vw;
     position: absolute;
 }
 
@@ -129,7 +142,7 @@ body {
     color: #FFF;
     font-family: Manrope;
     font-weight: 999;
-    font-size: 100px;
+    font-size: 5.208vw;
     z-index: 5;
     position: relative;
     margin: 0;
@@ -141,7 +154,7 @@ body {
 #falconhacks-subtext-header {
     color: #FFF;
     font-family: Manrope;
-    font-size: 50px;
+    font-size: 2.604vw;
     font-weight: 5;
     line-height: 175px;
     margin: 0;
@@ -165,8 +178,13 @@ body {
 }
 
 #date-location-header {
-    font-size: 30px;
+    font-size: 1.563vw;
     text-align: left;
+}
+
+#date-location-body {
+    color: var(--accent-blue);
+    height: 8.75vh;
 }
 
 #vanta-trunk {
@@ -179,15 +197,154 @@ body {
 }
 
 #signup-form {
-    flex-grow: 1;
+    width: 17vw;
+    height: 10vh;
+    position: relative;
+    top: 3vh;
+    float: right;
+    right: 5vw;
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--accent-blue);
+    color: white;
+    cursor: pointer;
+    font-family: Manrope;
+    font-size: 1.7vw;
+    line-height: 10vh;
+    /* text-align: center; */
+    margin: 0;
+    padding: 0px 33px;
+    border-radius: 5vh;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-#signup-form > iframe::-webkit-scrollbar {
-    display: none;
+.curvy-line-divider {
+    position: relative;
+    pointer-events: none;
+    left: -1vw;
 }
 
-#signup-form > iframe {
-    -ms-overflow-style: none;
-    width: 40vw;
-    height: 90vh;
+#bottom-text {
+    position: relative;
+    left: -1vw;
+    top: -1vh;
+    width: 100vw;
+    background-color: #211C3B;
+}
+
+#bottom-text > table {
+    position: relative;
+    width: 100vw;
+    font-family: Manrope;
+    border-collapse: separate;
+    border-spacing: 10vw 0;
+
+}
+
+.bottom-text-header {
+    font-size: 2.5vw;
+    color: white;
+    font-weight: bold;
+}
+
+.bottom-text-text {
+    font-size: 1.25vw;
+    color: var(--accent-blue);
+}
+
+#blue-cards {
+    position: relative;
+    width: 100vw;
+}
+
+#blue-cards > table {
+    padding: 0 5vw;
+    border-spacing: 5vw;
+    color: white;
+}
+
+.blue-card {
+    background-color: var(--accent-blue);
+    border-radius: 50px;
+    width: 25vw;
+    color: black;
+    padding: 5vh;
+    vertical-align: top;
+    text-align: center;
+    font-size: 1.25vw;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.5);
+}
+
+.bc-header {
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+#curvy-line-divider-2 {
+    background-color: #211C3B;
+    position: relative;
+    top: -1vh;
+}
+
+#more-bottom-text {
+    position: relative;
+    background-color: #2C264D;
+    width: 102vw;
+    top: -2vh;
+    left: -1vw;
+}
+
+#mbt-text {
+    position: relative;
+    border-collapse: separate;
+    border-spacing: 8vw 0;
+}
+
+#mbt-text th {
+    width: 22.67vw;
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    padding-bottom: 2vh;
+}
+
+#mbt-text td {
+    width: 20vw;
+    font-size: 1.25vw;
+    color: var(--accent-blue);
+    vertical-align: top;
+    color: #88c0d0;
+}
+
+#sponsor-row {
+    padding-top: 15vh;
+    padding-bottom: 20vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+#sponsor-row th {
+    text-align: center;
+    padding-bottom: 5vh;
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: white;
+}
+
+#sponsor-row td {
+    width: 10vw;
+    padding: 0 5vw;
+}
+
+#sponsor-row img {
+    border-radius: 10vw;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Falcon Hacks</title>
+        <title>FalconHacks</title>
         <meta charset=UTF-8>
         <link rel="stylesheet" href="stylesheet.css">
         <script src="p5.min.js"></script>
@@ -14,36 +14,36 @@
                     el: "#vanta-trunk",
                     mouseControls: false,
                     touchControls: false,
-                    minHeight: 200.00,
-                    minWidth: 200.00,
+                    minHeight: 50,
+                    minWidth: 50,
                     scale: 1.00,
-                    scaleMobile: 1.00,
-                    color: 0xb3a9,
+                    scaleMobile: 0,
+                    color: "rgb(136, 192, 208)",
                     backgroundColor: "rgba(0, 0, 0, 0)",
                     chaos: 2.0
                 });
             }
         </script>
+        <div id="topbar">
+            <div id="logo-div"><ul id="logos">
+                <li><img id="falconhacks-logo" src="FalconHacks logo.png"></li>
+                <!-- <li><img class="sponsor-img" src="sponsor1.png" onerror="this.src='white circle.png'"></li>
+                <li><img class="sponsor-img" src="sponsor1.png" onerror="this.src='white circle.png'"></li>
+                <li><img class="sponsor-img" src="sponsor1.png" onerror="this.src='white circle.png'"></li>
+                <li><img class="sponsor-img" src="sponsor1.png" onerror="this.src='white circle.png'"></li> -->
+            </ul></div>
+            <div id="nav-div"><ul id="nav">
+                <li><a href="nothin yet">Home</a></li>
+                <li><a href="nothin yet">Schedule</a></li>
+                <li><a href="nothin yet">Announcements</a></li>
+                <li><a href="nothin yet">Our Team</a></li>
+            </ul></div>
+        </div>
         <header id="banner">
-            <div id="topbar">
-                <div id="logo-div"><ul id="logos">
-                    <li><img id="falconhacks-logo" src="FalconHacks logo.png"></li>
-                    <li><img class="sponsor-img" src="sponsor1.png" onerror="this.src='white circle.png'"></li>
-                    <li><img class="sponsor-img" src="sponsor1.png" onerror="this.src='white circle.png'"></li>
-                    <li><img class="sponsor-img" src="sponsor1.png" onerror="this.src='white circle.png'"></li>
-                    <li><img class="sponsor-img" src="sponsor1.png" onerror="this.src='white circle.png'"></li>
-                </ul></div>
-                <div id="nav-div"><ul id="nav">
-                    <li><a href="nothin yet">Home</a></li>
-                    <li><a href="nothin yet">Schedule</a></li>
-                    <li><a href="nothin yet">Announcements</a></li>
-                    <li><a href="nothin yet">Our Team</a></li>
-                </ul></div>
-            </div>
             <div id="banner-body">
                 <div id="banner-text">
                     <div id="vanta-trunk"></div>
-                    <h1 id="falconhacks-banner-header">FalconHacks</h1>
+                    <h1 id="falconhacks-banner-header"><div style="display: inline;color: #88c0d0">Falcon</div>Hacks</h1>
                     <h3 id="falconhacks-subtext-header">by Foothill CS Club</h3>
                     <div id="date-location">
                         <table>
@@ -53,7 +53,7 @@
                             </thead >
                             <tbody id="date-location-body">
                                 <td id="dlbody-date">
-                                    March 21st, 2020
+                                    March 22nd, 2020
                                     <br>
                                     9:00 AM - 9:00 PM
                                 </td>
@@ -62,16 +62,121 @@
                                     <br>
                                     4375 Foothill Road, Pleasanton
                                     <br>
-                                    D-30 Mr. Sos's room
+                                    D-30, Mr. Sos's room
                                 </td>
                             </tbody>
                         </table>
                     </div>
                 </div>
-                <div id="signup-form">
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfsdfIDc6fXjSH2QyVcgQwcQirAjrycIzkLW8WMB_AVHqk9nw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                </div>
-            </div>
+                <a id="signup-form" class="typeform-share button" href="https://willjhliang.typeform.com/to/SRhkV0" data-mode="drawer_right" data-hide-headers=true data-hide-footer=true data-submit-close-delay="0" target="_blank">Sign Up</a>
+                <script> 
+                    (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })()
+                </script>
         </header>
+        <img class="curvy-line-divider" src="curvy line 1.png">
+        <div id="bottom-text">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="bottom-text-header">
+                            What is FalconHacks?
+                        </td>
+                        <td class="bottom-text-header bt-col-right">
+                            Our Mission
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan=2 class="bottom-text-text">
+                            FalconHacks is an annual hackathon - an event for humans, not just coders to create and present an idea or solution - for high schoolers. Teams will go through workshops to hone their skills and work together to create a prototype and presentation. Get inspired by your peers, and have a blast bringing your dreams to life! 
+                        </td>
+                        <td class="bottom-text-text bt-col-right">
+                            To inspire our community to solve real-world problems through computer science. With the rise of computers in everyday life, programming continues to become more valuable and relevant from science to consumer technology. At FalconHacks, we aim to introduce students to computer science fundamentals and launch the next generation of strong coders.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="blue-cards">
+                <table>
+                    <tbody>
+                        <td class="blue-card">
+                            <div class="bc-header">Collaborate</div>
+                            Meet and collaborate with high schoolers from all over the Bay Area.  Concepts grow best in a diverse and active environment.
+                        </td>
+                        <td class="blue-card">
+                            <div class="bc-header">Learn</div>
+                            Go through our workshops taught by talented and clever highschoolers. With a startup CRO, CTO, a RoboRAVE winner, and a USACO Finalist, our team will empower you to implement your idea.
+                        </td>
+                        <td class="blue-card">
+                            <div class="bc-header">Innovate</div>
+                            With an open theme and a venue offering food and entertainment, you can devote more time to coming up with and implementing your ideas.
+                        </td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <img class="curvy-line-divider" id="curvy-line-divider-2" src="curvy line 2.png">
+        <div id="more-bottom-text">
+            <div>
+                <table id="mbt-text">
+                    <thead>
+                        <th>
+                            Your Teams
+                        </th>
+                        <th>
+                            The Theme
+                        </th>
+                        <th>
+                            The Workshops
+                        </th>
+                    </thead>
+                    <tbody>
+                        <td>
+                            Up to 3 people per team. You can work with a smaller group or we can pair people together at the event.
+                        </td>
+                        <td>
+                            Our theme is more open-ended and flexible this year. Here are some problems to get you started:
+                            <br>
+                            <br>
+                            <div style="display: inline; color: white; font-weight: bold;">
+                                Global warming
+                                <br>
+                                Community safety
+                                <br>
+                                General productivity
+                                <br>
+                                Digital well-being</div>
+                        </td>
+                        <td>
+                            <div style="display: inline; color: white; font-weight: bold;">Web design</div> by Prem Giridhar
+                            <br>
+                            <div style="display: inline; color: white; font-weight: bold;">App development</div> by Oliver Trevor
+                            <br>
+                            <div style="display: inline; color: white; font-weight: bold;">USACO</div> by Kevin Li
+                            <br>
+                            <div style="display: inline; color: white; font-weight: bold;">AP CS A review</div> by Vishal Muthuraja
+                        </td>
+                    </tbody>
+                </table>
+                <table id="sponsor-row">
+                    <thead>
+                        <th colspan=4>Our Sponsors</th>
+                    </thead>
+                    <tbody>
+                        <td>
+                            <img src="workday.png" alt="Workday">
+                        </td>
+                        <td>
+                            <img src="workday.png" alt="Workday">
+                        </td>
+                        <td>
+                            <img src="workday.png" alt="Workday">
+                        </td>
+                        <td>
+                            <img src="workday.png" alt="Workday">
+                        </td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </body>
 </html>
