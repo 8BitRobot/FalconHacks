@@ -108,9 +108,10 @@ body {
     color: white;
     text-decoration: none;
     font-family: Manrope;
-    font-size: 24px;
+    font-size: 21px;
     line-height: 4.5vh;
     border-radius: 50px;
+    transition: 0.3s;
 }
 
 #nav > li > a:hover {
@@ -180,12 +181,13 @@ body {
 }
 
 #date-location-header {
-    font-size: 1.563vw;
+    font-size: 2.5vw;
     text-align: left;
 }
 
 #date-location-body {
     color: var(--accent-blue);
+    font-size: 1.25vw;
     height: 8.75vh;
 }
 
@@ -349,4 +351,50 @@ body {
 
 #sponsor-row img {
     border-radius: 10vw;
+}
+
+#footer {
+    background-color: #120F22;
+    width: 100vw;
+    height: 5vh;
+    font-family: Manrope;
+}
+
+#footer td > * {
+    position: relative;
+    top: -0.8vh;
+}
+
+#footer-logo {
+    width: 5vw;
+}
+
+#footer-mwl, #footer-email {
+    width: 45vw;
+}
+
+#footer img {
+    display: inline;
+    height: 5vh;
+    width: 5vh;
+}
+
+#made-with-love {
+    display: inline;
+    color: white;
+    height: 6vh;
+    vertical-align: middle;
+}
+
+#footer-email {
+    text-align: right;
+    vertical-align: middle;
+}
+
+#footer-email a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    line-height: 6vh;
+    font-size: 1vw;
 }
