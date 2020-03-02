@@ -47,7 +47,7 @@ body {
     margin: 0;
     left: -1vw;
     width: 100vw;
-    height: 10vh;
+    height: 6vh;
     top: 0;
     background-color: #120F22;
     z-index: 6;
@@ -56,13 +56,13 @@ body {
 
 #falconhacks-logo {
     display: inline;
-    height: 10vh;
+    height: 6vh;
     left: 2vw;
 }
 
-.sponsor-img {
+/* .sponsor-img {
     height: 10vh;
-}
+} */
 
 #logo-div {
     display: inline;
@@ -96,19 +96,21 @@ body {
 #nav > li {
     display: inline;
     float: left;
-    padding-left: 2vh;
-    padding-right: 2vh;
+    padding-top: 1vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
 }
 
 #nav > li > a {
     display: block;
-    padding: 0px 8px;
+    padding: 0px 20px;
     background-color: transparent;
     color: white;
     text-decoration: none;
     font-family: Manrope;
-    font-size: 3vh;
-    line-height: 10vh;
+    font-size: 24px;
+    line-height: 4.5vh;
+    border-radius: 50px;
 }
 
 #nav > li > a:hover {
