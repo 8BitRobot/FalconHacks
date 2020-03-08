@@ -23,6 +23,7 @@ html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    overflow-y: scroll;
     background-color: #120F22;
     font-family: Manrope;
 }
@@ -58,28 +59,12 @@ body {
     display: inline;
     height: 6vh;
     left: 2vw;
+    padding-left: 2vh;
+    padding-right: 2vh;
 }
-
-/* .sponsor-img {
-    height: 10vh;
-} */
 
 #logo-div {
     display: inline;
-    float: left;
-}
-
-#logos {
-    display: inline;
-    list-style-type: none;
-    margin: 0;
-}
-
-#logos > li {
-    display: inline;
-    float: left;
-    padding-left: 2vh;
-    padding-right: 2vh;
 }
 
 #nav-div {
@@ -130,14 +115,6 @@ body {
     position: absolute;
 }
 
-#signup-form {
-    position: relative;
-    display: inline-block;
-    width: 40vw;
-    float: right;
-    margin: 0;
-}
-
 #falconhacks-banner-header {
     height: 30vh;
     width: 100%;
@@ -172,12 +149,13 @@ body {
     left: 4vw;
     position: relative;
     z-index: 5;
+    border-spacing: 3vw;
 }
 
 #date-location > table {
     font-family: Manrope;
     color: white;
-    width: 25vw;
+    width: 50%;
 }
 
 #date-location-header {
@@ -201,7 +179,7 @@ body {
 }
 
 #signup-form {
-    width: 17vw;
+    width: 12vw;
     height: 10vh;
     position: relative;
     top: 3vh;
@@ -217,15 +195,20 @@ body {
     line-height: 10vh;
     /* text-align: center; */
     margin: 0;
-    padding: 0px 33px;
+    padding: 0 2vw;
     border-radius: 5vh;
-    max-width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     font-weight: bold;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+#signup-form:hover {
+    background-color: white;
+    color: #120F22;
+    transition: 0.3s;
 }
 
 .curvy-line-divider {
@@ -237,9 +220,9 @@ body {
 #bottom-text {
     position: relative;
     left: -1vw;
-    top: -1vh;
     width: 100vw;
     background-color: #211C3B;
+    margin-top: -1vh;
 }
 
 #bottom-text > table {
@@ -268,6 +251,7 @@ body {
 }
 
 #blue-cards > table {
+    width: 100vw;
     padding: 0 5vw;
     border-spacing: 5vw;
     color: white;
@@ -295,21 +279,23 @@ body {
 #curvy-line-divider-2 {
     background-color: #211C3B;
     position: relative;
-    top: -1vh;
 }
 
 #more-bottom-text {
     position: relative;
     background-color: #2C264D;
     width: 102vw;
-    top: -2vh;
     left: -1vw;
+    margin-top: -1vh;
 }
 
 #mbt-text {
+    padding-left: 5vw;
+    padding-right: 5vw;
     position: relative;
     border-collapse: separate;
-    border-spacing: 8vw 0;
+    border-spacing: 4vw 0;
+    width: 100vw;
 }
 
 #mbt-text th {
@@ -322,7 +308,6 @@ body {
 }
 
 #mbt-text td {
-    width: 20vw;
     font-size: 1.25vw;
     color: var(--accent-blue);
     vertical-align: top;
@@ -334,9 +319,11 @@ body {
     padding-bottom: 20vh;
     padding-left: 5vw;
     padding-right: 5vw;
+    width: 100vw;
 }
 
 #sponsor-row th {
+    width: 100vw;
     text-align: center;
     padding-bottom: 5vh;
     font-size: 2.5vw;
@@ -345,8 +332,7 @@ body {
 }
 
 #sponsor-row td {
-    width: 10vw;
-    padding: 0 5vw;
+    text-align: center;
 }
 
 #sponsor-row img {
@@ -354,6 +340,7 @@ body {
 }
 
 #footer {
+    position: relative;
     background-color: #120F22;
     width: 100vw;
     height: 5vh;
@@ -362,27 +349,17 @@ body {
 
 #footer td > * {
     position: relative;
-    top: -0.8vh;
-}
-
-#footer-logo {
-    width: 5vw;
 }
 
 #footer-mwl, #footer-email {
-    width: 45vw;
-}
-
-#footer img {
-    display: inline;
+    width: 50vw;
+    padding: 0vh 5vw;
     height: 5vh;
-    width: 5vh;
 }
 
 #made-with-love {
     display: inline;
     color: white;
-    height: 6vh;
     vertical-align: middle;
 }
 
@@ -395,6 +372,115 @@ body {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    line-height: 6vh;
+    line-height: 5vh;
     font-size: 1vw;
+}
+
+#prizes-banner {
+    background-color: #120F22;
+    width: 100vw;
+    height: 80vh;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+#prizes-banner-body {
+    position: relative;
+    height: 65vh;
+    top: 10vh;
+}
+
+#prizes-text {
+    width: 30vw;
+    float: left;
+    display: inline-block;
+    padding: 5vh 10vw;
+}
+
+#prizes-header {
+    height: 7vh;
+    width: 30vw;
+    font-size: 70px;
+    color: white;
+}
+
+#prize-table {
+    padding: 5vh 0;
+}
+
+#prize-table-header tr {
+    height: 10vh;
+    color: var(--accent-blue);
+}
+
+#prize-table-header th {
+    padding-right: 5vw;
+}
+
+#pth-grand-prize {
+    color: white;
+    font-size: 90px;
+}
+
+.pth-2-3-prize {
+    color: var(--accent-blue);
+    font-size: 60px;
+}
+
+#prize-table-body {
+    color: var(--accent-blue);
+    font-size: 24px;
+}
+
+#plb-spacer-row {
+    height: 4vh;
+}
+
+#judging-text {
+    width: 44vw;
+    display: inline-block;
+    padding: 5vh 3vw;
+}
+
+#judging-header {
+    height: 7vh;
+    width: 44vw;
+    font-size: 70px;
+    color: white;
+}
+
+#judging-table {
+    padding: 5vh 0;
+}
+
+.jtb-point-value {
+    color: white;
+    font-size: 24px;
+    font-weight: 999;
+    padding-right: 3vw;
+}
+
+.jtb-description {
+    color: var(--accent-blue);
+    font-size: 24px;
+}
+
+#prizes-cld {
+    width: 101vw;
+}
+
+#prizes-footer {
+    margin-top: -2vh;
+    bottom: -1vh;
+    left: -1vw;
+    position: relative;
+    background-color: #211C3B;
+    width: 101vw;
+    height: 7vh;
+    font-family: Manrope;
+}
+
+#prizes-footer td > * {
+    position: relative;
 }
