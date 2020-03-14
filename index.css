@@ -1,9 +1,9 @@
 #banner {
     background-color: #120F22;
-    width: 100vw;
+    width: 102vw;
     height: 100vh;
     top: 0;
-    left: 0;
+    left: -1vw;
     z-index: 5;
 }
 
@@ -173,7 +173,7 @@
     color: white;
 }
 
-#bottom-text-mobile {
+.bottom-text-mobile {
     display: none;
 }
 
@@ -271,8 +271,8 @@
         /* color: #FFF; */
         /* font-family: Manrope; */
         width: 100%;
-        font-size: 5vh;
-        font-weight: 5;
+        font-size: 3.5vh;
+        font-weight: 500;
         line-height: 3vh;
         text-align: center;
         margin-top: 2vh;
@@ -339,7 +339,7 @@
         display: none;
     }
 
-    #bottom-text-mobile {
+    .bottom-text-mobile {
         display: block;
         position: relative;
         left: -1vw;
@@ -385,5 +385,13 @@
 
     .bc-text {
         font-size: 2vh;
+    }
+
+    #more-bottom-text {
+        display: none;
+    }
+
+    #more-bottom-text-mobile {
+        background-color: #2C264D;
     }
 }
