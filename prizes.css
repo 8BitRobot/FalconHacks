@@ -1,0 +1,108 @@
+#prizes-banner {
+    background-color: #120F22;
+    width: 100vw;
+    height: 85vh;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+#prizes-banner-body {
+    position: relative;
+    height: 65vh;
+    top: 10vh;
+}
+
+#prizes-text {
+    width: 30vw;
+    float: left;
+    display: inline-block;
+    padding: 5vh 10vw;
+}
+
+#prizes-header {
+    height: 7vh;
+    width: 30vw;
+    font-size: 3.646vw;
+    color: white;
+}
+
+#prize-table {
+    padding: 5vh 0;
+}
+
+#prize-table-header tr {
+    height: 10vh;
+    color: var(--accent-blue);
+}
+
+#prize-table-header th {
+    padding-right: 5vw;
+}
+
+#pth-grand-prize {
+    color: white;
+    font-size: 4.688vw;
+}
+
+.pth-2-3-prize {
+    color: var(--accent-blue);
+    font-size: 3.125vw;
+}
+
+#prize-table-body {
+    color: var(--accent-blue);
+    font-size: 1.25vw;
+}
+
+#plb-spacer-row {
+    height: 4vh;
+}
+
+#judging-text {
+    width: 44vw;
+    display: inline-block;
+    padding: 5vh 3vw;
+}
+
+#judging-header {
+    height: 7vh;
+    width: 44vw;
+    font-size: 3.646vw;
+    color: white;
+}
+
+#judging-table {
+    padding: 5vh 0;
+}
+
+.jtb-point-value {
+    color: white;
+    font-size: 1.25vw;
+    font-weight: 999;
+    padding-right: 3vw;
+}
+
+.jtb-description {
+    color: var(--accent-blue);
+    font-size: 1.25vw;
+}
+
+#prizes-cld {
+    width: 101vw;
+}
+
+#prizes-footer {
+    margin-top: -2vh;
+    bottom: -1vh;
+    left: -1vw;
+    position: relative;
+    background-color: #211C3B;
+    width: 101vw;
+    height: 7vh;
+    font-family: Manrope;
+}
+
+#prizes-footer td > * {
+    position: relative;
+}
