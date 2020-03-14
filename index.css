@@ -173,6 +173,10 @@
     color: white;
 }
 
+#bottom-text-mobile {
+    display: none;
+}
+
 #curvy-line-divider-2 {
     background-color: #211C3B;
     position: relative;
@@ -242,7 +246,7 @@
     }
 
     #banner {
-        height: 650vh;
+        height: 65vh;
     }
     
     #banner-body {
@@ -329,5 +333,57 @@
         /* font-weight: bold;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale; */
+    }
+
+    #bottom-text {
+        display: none;
+    }
+
+    #bottom-text-mobile {
+        display: block;
+        position: relative;
+        left: -1vw;
+        width: 100vw;
+        background-color: #211C3B;
+        margin-top: -1.1vh;
+        padding-bottom: 2vh;
+    }
+
+    .btm-head {
+        font-size: 4vh;
+        text-align: center;
+        padding-top: 3vh;
+    }
+
+    .btm-text {
+        padding: 1vh 10vw;
+        font-size: 2vh;
+    }
+
+    .btm-bottommost-text {
+        padding-bottom: 5vh;
+    }
+
+    .blue-card {
+        /* background-color: var(--accent-blue); */
+        border-radius: 2.5vh;
+        width: 80vw;
+        margin: 5vh 4vw;
+        color: black;
+        padding: 2.5vh 5vw;
+        vertical-align: top;
+        text-align: center;
+        box-shadow: 0 0 1.563vw 0 rgba(0,0,0,0.5);
+    }
+    
+    .bc-header {
+        font-size: 4vh;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+    }
+
+    .bc-text {
+        font-size: 2vh;
     }
 }

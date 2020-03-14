@@ -99,6 +99,7 @@ body {
     position: relative;
     pointer-events: none;
     left: -1vw;
+    width: 101vw;
 }
 
 #footer {
@@ -163,6 +164,6 @@ body {
     #nav > .temp {
         display: none;
     }
-    
+
     /* TODO: make footer responsive */
 }
