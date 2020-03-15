@@ -104,8 +104,8 @@ body {
 .curvy-line-divider {
     position: relative;
     pointer-events: none;
-    left: -1vw;
-    width: 101vw;
+    left: 0vw;
+    width: 100vw;
 }
 
 #footer {
@@ -155,12 +155,17 @@ body {
         overflow-x: hidden;
     }
 
+    body {
+        width: 100vw;
+        margin: 0;
+    }
+
     #topbar, #falconhacks-logo {
         height: 10vh;
     }
 
     #topbar {
-        width: 101.2vw;
+        width: 100vw;
     }
     
     #nav > li {
@@ -183,7 +188,6 @@ body {
         display: none;
     }
 
-    /* TODO: make footer responsive */
     #footer {
         position: relative;
         background-color: #120F22;

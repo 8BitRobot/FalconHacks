@@ -261,7 +261,7 @@
         height: 10vh;
         width: 100%;
         line-height: 10vh;
-        font-size: 8vh;
+        font-size: 7vh;
         top: 0vh;
         left: -1vw;
         text-align: center;
@@ -309,12 +309,12 @@
     }
 
     #signup-form {
-        width: 80vw;
+        width: 70vw;
         height: 10vh;
         position: relative;
         /* float: right; */
         /* right: 0vw; */
-        left: -3vw;
+        left: 0;
         display: block;
         /* text-decoration: none; */
         /* background-color: var(--accent-blue); */
@@ -325,7 +325,9 @@
         line-height: 10vh;
         text-align: center;
         margin-top: 40vh;
-        padding: 0 8vw;
+        margin-left: 9vw;
+        margin-right: 9vw;
+        padding: 0 6vw;
         /* border-radius: 5vh; */
         /* white-space: nowrap; */
         /* overflow: hidden; */
@@ -342,7 +344,7 @@
     .bottom-text-mobile {
         display: block;
         position: relative;
-        left: -1vw;
+        left: 0vw;
         width: 100vw;
         background-color: #211C3B;
         margin-top: -1.1vh;
