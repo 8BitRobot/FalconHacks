@@ -3,25 +3,36 @@
     <head>
         <title>Our Team</title>
         <meta charset=UTF-8>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="global.css">
         <link rel="stylesheet" href="ourteam.css">
-        <script src="p5.min.js"></script>
-        <script src="vanta.trunk.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="nav.js"></script>
     </head>
     <body>
-        <div id="topbar">
+        <nav id="topbar">
             <div id="logo-div">
                 <img id="falconhacks-logo" src="FalconHacks logo.png">
             </div>
-            <div id="nav-div">
-                <ul id="nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="nothin yet">Schedule</a></li>
-                    <li><a href="prizes.html">Prizes</a></li>
-                    <li><a href="ourteam.html">Our Team</a></li>
+            <div id="nav-div-desktop"><ul id="nav">
+                <li><a href="index.html">home</a></li>
+                <li><a href="schedule.html">schedule</a></li>
+                <li><a href="prizes.html">prizes</a></li>
+                <li><a href="ourteam.html">our team</a></li>
+            </ul></div>
+            <button id="mobile-nav-btn" class="mobile-only show">
+                <img src="menu.png">
+            </button>
+            <div class="mobile-menu mobile-only">
+                <ul class="nav-text">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="schedule.html">schedule</a></li>
+                    <li><a href="prizes.html">prizes</a></li>
+                    <li><a href="ourteam.html">our team</a></li>
+                    <li><button id="mobile-menu-close">close</button></li>
                 </ul>
             </div>
+        </nav>
         </div>
         <header id="ourteam-banner">
             <div id="ourteam-banner-body">
@@ -32,7 +43,7 @@
                             <img class="ourteam-images" src="jahooey.png">
                         </th>
                         <th>
-                            <img class="ourteam-images" src="brem.png">
+                            <img class="ourteam-images" src="premothy.png">
                         </th>
                         <th>
                             <img class="ourteam-images" src="olivegarden.png">
@@ -81,14 +92,41 @@
                         </tr>
                     </tbody>
                 </table>
+                <div id="ourteam-mobile">
+                    <div class="ourteam-member">
+                        <img class="ourteam-images" src="jahooey.png">
+                        <div class="ourteam-name">Jiahua "Will" Liang</div>
+                        <div class="ourteam-info">Program Director, CS Club VP</div>
+                    </div>
+                    <div class="ourteam-member">
+                        <img class="ourteam-images" src="premothy.png">
+                        <div class="ourteam-name">Premkumar Giridhar</div>
+                        <div class="ourteam-info">Webmaster</div>
+                    </div>
+                    <div class="ourteam-member">
+                        <img class="ourteam-images" src="olivegarden.png">
+                        <div class="ourteam-name">Oliver Trevor</div>
+                        <div class="ourteam-info">CS Club VP</div>
+                    </div>
+                    <div class="ourteam-member">
+                        <img class="ourteam-images" src="mewtwo.png">
+                        <div class="ourteam-name">Vishal Muthuraja</div>
+                        <div class="ourteam-info">Outreach Coordinator</div>
+                    </div>
+                    <div class="ourteam-member">
+                        <img class="ourteam-images" src="white circle.png">
+                        <div class="ourteam-name">Kevin Li</div>
+                        <div class="ourteam-info otm-bottommost">CS Club President</div>
+                    </div>
+                </div>
             </div>
         </header>
         <img id="prizes-cld" class="curvy-line-divider" src="curvy line 4.png">
-        <footer id="ourteam-footer">
+        <footer id="footer">
             <table>
                 <td id="footer-mwl">
                     <div id="made-with-love">
-                        Made with &nbsp; <img src="heart.png" style="height: 15px; width: 15px;" alt="heart"> &nbsp; by Foothill High CS Club
+                        Made with &nbsp; <img id="heart-icon" src="heart.png" alt="love"> &nbsp; by Foothill High CS Club
                     </div>
                 </td>
                 <td id="footer-email">

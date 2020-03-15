@@ -13,14 +13,18 @@
     top: 10vh;
 }
 
-#prizes-text {
+.prizes-text {
     width: 30vw;
     float: left;
     display: inline-block;
     padding: 5vh 10vw;
 }
 
-#prizes-header {
+#prizes-mobile {
+    display: none;
+}
+
+.prizes-header {
     height: 7vh;
     width: 30vw;
     font-size: 3.646vw;
@@ -88,21 +92,67 @@
     font-size: 1.25vw;
 }
 
-#prizes-cld {
-    width: 101vw;
-}
-
-#prizes-footer {
-    margin-top: -2vh;
-    bottom: -1vh;
-    left: -1vw;
-    position: relative;
+#footer {
     background-color: #211C3B;
-    width: 101vw;
-    height: 7vh;
-    font-family: Manrope;
+    margin-top: -1vh;
+    padding: 0.5vh 0;
 }
 
-#prizes-footer td > * {
-    position: relative;
+@media only screen and (max-width: 1000px) {
+
+    .prizes-text {
+        width: 80vw;
+    }
+
+    .prizes-header {
+        margin-top: 0;
+        font-size: 7vh;
+        text-align: center;
+    }
+
+    #prize-table {
+        display: none;
+    }
+
+    #prizes-mobile {
+        display: initial;
+    }
+
+    #pth-grand-prize {
+        font-weight: bold;
+        font-size: 4.5vh;
+        display: inline;
+    }
+
+    .pth-2-3-prize {
+        color: white;
+        display: inline;
+        font-size: 3vh;
+    }
+
+    .ptb-cells {
+        font-weight: 500;
+        color: var(--accent-blue);
+        display: inline;
+        font-size: 4.5vh;
+    }
+
+    .ptb-2-3 {
+        color: var(--accent-blue);
+        display: inline;
+        font-size: 3vh;
+    }
+
+    #judging-header {
+        font-size: 7vh;
+    }
+
+    #judging-table td {
+        font-size: 2.5vh;
+    }
+
+    #judging-table {
+        margin-bottom: 7vh;
+        padding-top: 0;
+    }
 }

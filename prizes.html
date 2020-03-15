@@ -6,27 +6,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="global.css">
         <link rel="stylesheet" href="prizes.css">
-        <script src="p5.min.js"></script>
-        <script src="vanta.trunk.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="nav.js"></script>
     </head>
     <body>
-        <div id="topbar">
+        <nav id="topbar">
             <div id="logo-div">
                 <img id="falconhacks-logo" src="FalconHacks logo.png">
             </div>
-            <div id="nav-div">
-                <ul id="nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="nothin yet">Schedule</a></li>
-                    <li><a href="prizes.html">Prizes</a></li>
-                    <li><a href="ourteam.html">Our Team</a></li>
+            <div id="nav-div-desktop"><ul id="nav">
+                <li><a href="index.html">home</a></li>
+                <li><a href="schedule.html">schedule</a></li>
+                <li><a href="prizes.html">prizes</a></li>
+                <li><a href="ourteam.html">our team</a></li>
+            </ul></div>
+            <button id="mobile-nav-btn" class="mobile-only show">
+                <img src="menu.png">
+            </button>
+            <div class="mobile-menu mobile-only">
+                <ul class="nav-text">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="schedule.html">schedule</a></li>
+                    <li><a href="prizes.html">prizes</a></li>
+                    <li><a href="ourteam.html">our team</a></li>
+                    <li><button id="mobile-menu-close">close</button></li>
                 </ul>
             </div>
-        </div>
+        </nav>
         <header id="prizes-banner">
             <div id="prizes-banner-body">
-                <div id="prizes-text">
-                    <h1 id="prizes-header">Prizes</h1>
+                <div class="prizes-text">
+                    <h1 class="prizes-header">Prizes</h1>
                     <div id="prize-table">
                         <table>
                             <thead id="prize-table-header">
@@ -53,9 +63,23 @@
                             </tbody>
                         </table>
                     </div>
+                    <div id="prizes-mobile">
+                        <div>
+                            <div id="pth-grand-prize">$100&nbsp;</div>
+                            <div class="ptb-cells">Grand prize</div>
+                        </div>
+                        <div>
+                            <div class="pth-2-3-prize">$50&nbsp;</div>
+                            <div class="ptb-2-3">Second place</div>
+                        </div>
+                        <div>
+                            <div class="pth-2-3-prize">$20&nbsp;</div>
+                            <div class="ptb-2-3">Third place</div>
+                        </div>
+                    </div>
                 </div>
-                <div id="judging-text">
-                    <h1 id="judging-header">Our Judging Criteria</h1>
+                <div class="prizes-text">
+                    <h1 class="prizes-header">Judging</h1>
                     <div id="judging-table">
                         <table>
                             <tbody>
@@ -86,11 +110,11 @@
             </div>
         </header>
         <img id="prizes-cld" class="curvy-line-divider" src="curvy line 3.png">
-        <footer id="prizes-footer">
+        <footer id="footer">
             <table>
                 <td id="footer-mwl">
                     <div id="made-with-love">
-                        Made with &nbsp; <img src="heart.png" style="height: 15px; width: 15px;" alt="heart"> &nbsp; by Foothill High CS Club
+                        Made with &nbsp; <img id="heart-icon" src="heart.png" alt="love"> &nbsp; by Foothill High CS Club
                     </div>
                 </td>
                 <td id="footer-email">

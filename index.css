@@ -254,45 +254,37 @@
     }
     
     #banner-text {
-        width: 100%;
+        width: 100vw;
     }
     
     #falconhacks-banner-header {
         height: 10vh;
-        width: 100%;
+        width: 100vw;
         line-height: 10vh;
         font-size: 7vh;
         top: 0vh;
-        left: -1vw;
+        left: 0vw;
         text-align: center;
     }
     
     #falconhacks-subtext-header {
-        /* color: #FFF; */
-        /* font-family: Manrope; */
-        width: 100%;
+        width: 100vw;
         font-size: 3.5vh;
         font-weight: 500;
         line-height: 3vh;
         text-align: center;
         margin-top: 2vh;
-        left: -1vw;
-        /* position: relative;
-        display: inline-block;
-        z-index: 5; */
+        left: 0vw;
     }
     
     #date-location {
         margin-top: 5vh;
         left: 0vw;
         position: relative;
-        /* z-index: 5; */
     }
     
     #date-location > table {
-        /* font-family: Manrope; */
-        /* color: white; */
-        width: 100%;
+        width: 100vw;
     }
     
     #date-location-header {
@@ -305,22 +297,16 @@
         color: var(--accent-blue);
         font-size: 2vh;
         vertical-align: top;
-        /* height: 8.75vh; */
     }
 
     #signup-form {
         width: 70vw;
         height: 10vh;
         position: relative;
-        /* float: right; */
-        /* right: 0vw; */
         left: 0;
         display: block;
-        /* text-decoration: none; */
-        /* background-color: var(--accent-blue); */
         color: white;
         cursor: pointer;
-        /* font-family: Manrope; */
         font-size: 3vh;
         line-height: 10vh;
         text-align: center;
@@ -328,13 +314,6 @@
         margin-left: 9vw;
         margin-right: 9vw;
         padding: 0 6vw;
-        /* border-radius: 5vh; */
-        /* white-space: nowrap; */
-        /* overflow: hidden; */
-        /* text-overflow: ellipsis; */
-        /* font-weight: bold;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale; */
     }
 
     #bottom-text {
@@ -360,6 +339,7 @@
     .btm-text {
         padding: 1vh 10vw;
         font-size: 2vh;
+        text-align: center;
     }
 
     .btm-bottommost-text {
@@ -367,7 +347,6 @@
     }
 
     .blue-card {
-        /* background-color: var(--accent-blue); */
         border-radius: 2.5vh;
         width: 80vw;
         margin: 5vh 4vw;

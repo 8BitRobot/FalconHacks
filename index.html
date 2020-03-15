@@ -9,6 +9,7 @@
         <script src="p5.min.js"></script>
         <script src="vanta.trunk.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="nav.js"></script>
     </head>
     <body>
         <script>
@@ -26,23 +27,6 @@
                     chaos: 2.0
                 });
             }
-
-            $(document).ready(function() {
-                $("#mobile-nav-btn").click(function() {
-                    $(".mobile-menu").fadeToggle();
-                    document.body.style.top = `-${window.scrollY}px`;
-                    document.body.style.position = 'fixed';
-                });
-
-                $("#mobile-menu-close").click(function() {
-                    $(".mobile-menu").fadeToggle();
-                    const scrollY = document.body.style.top;
-                    $("body").css("position", "");
-                    $("body").css("top", "");
-                    window.scrollTo(0, parseInt(scrollY || '0') * -1);
-                });
-            });
-
         </script>
         <nav id="topbar">
             <div id="logo-div">
