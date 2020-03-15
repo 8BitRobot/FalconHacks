@@ -37,12 +37,6 @@ html {
 body {
     top: 0;
     left: 0;
-    overflow-x: hidden;
-    -ms-overflow-style: none;
-}
-
-body::-webkit-scrollbar {
-    display: none;
 }
 
 #topbar {
@@ -138,6 +132,10 @@ body::-webkit-scrollbar {
     vertical-align: middle;
 }
 
+#heart-icon {
+    width: 0.781vw;
+}
+
 #footer-email {
     text-align: right;
     vertical-align: middle;
@@ -159,6 +157,10 @@ body::-webkit-scrollbar {
 
     #topbar, #falconhacks-logo {
         height: 10vh;
+    }
+
+    #topbar {
+        width: 101.2vw;
     }
     
     #nav > li {
@@ -182,4 +184,36 @@ body::-webkit-scrollbar {
     }
 
     /* TODO: make footer responsive */
+    #footer {
+        position: relative;
+        background-color: #120F22;
+        width: 100vw;
+        height: 5vh;
+        font-family: Manrope;
+    }
+    
+    #footer td > * {
+        position: relative;
+    }
+    
+    #footer-mwl {
+        width: 75vw;
+        padding: 0 2vw;
+    }
+    
+    #made-with-love {
+        font-size: 1.5vh;
+    }
+
+    #heart-icon {
+        width: 3vw;
+    }
+    
+    #footer-email {
+        width: 25vw;
+    }
+    
+    #footer-email a {
+        font-size: 1.2vh;
+    }
 }

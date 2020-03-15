@@ -1,9 +1,9 @@
 #banner {
     background-color: #120F22;
-    width: 102vw;
+    width: 100vw;
     height: 100vh;
     top: 0;
-    left: -1vw;
+    left: 0;
     z-index: 5;
 }
 
