@@ -87,6 +87,10 @@ body {
     display: none;
 }
 
+#nav > li:nth-child(2), .nav-text > li:nth-child(2) {
+    display: none;
+}
+
 #nav>li>a {
     display: block;
     padding: 0 1.042vw;
