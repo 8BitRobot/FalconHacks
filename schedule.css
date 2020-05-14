@@ -1,4 +1,4 @@
-#prizes-banner {
+#schedule-banner {
     background-color: #120F22;
     width: 100vw;
     height: 85vh;
@@ -7,24 +7,24 @@
     z-index: 5;
 }
 
-#prizes-banner-body {
+#schedule-banner-body {
     position: relative;
     height: 65vh;
     top: 10vh;
 }
 
-.prizes-text {
-    width: 30vw;
+.schedule-text {
+    width: 32vw;
     float: left;
     display: inline-block;
-    padding: 5vh 10vw;
+    padding: 5vh 8vw;
 }
 
-#prizes-mobile {
+#schedule-mobile {
     display: none;
 }
 
-.prizes-header {
+.schedule-header {
     height: 7vh;
     width: 30vw;
     font-size: 3.646vw;
@@ -100,11 +100,11 @@
 
 @media only screen and (max-width: 1000px) {
 
-    .prizes-text {
+    .schedule-text {
         width: 80vw;
     }
 
-    .prizes-header {
+    .schedule-header {
         margin-top: 0;
         font-size: 7vh;
         text-align: center;
@@ -114,7 +114,7 @@
         display: none;
     }
 
-    #prizes-mobile {
+    #schedule-mobile {
         display: initial;
     }
 
