@@ -37,6 +37,7 @@ html {
 body {
     top: 0;
     left: 0;
+    margin: 0;
 }
 
 #topbar {
@@ -82,6 +83,10 @@ body {
     padding-right: 1vh;
 }
 
+#nav > li:nth-child(3), .nav-text > li:nth-child(3) {
+    display: none;
+}
+
 #nav>li>a {
     display: block;
     padding: 0 1.042vw;
@@ -89,7 +94,7 @@ body {
     color: white;
     text-decoration: none;
     font-family: Manrope;
-    font-size: 1.094vw;
+    font-size: 21px;
     line-height: 4.5vh;
     border-radius: 2.604vw;
     transition: 0.3s;
