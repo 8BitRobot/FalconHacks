@@ -14,10 +14,10 @@
 }
 
 .schedule-text {
-    width: 32vw;
+    width: 37vw;
     float: left;
     display: inline-block;
-    padding: 5vh 8vw;
+    padding: 5vh 5vw;
 }
 
 #schedule-mobile {
@@ -153,7 +153,7 @@
     }
 
     #judging-table {
-        margin-bottom: 7vh;
+        margin-bottom: 0;
         padding-top: 0;
     }
 }
