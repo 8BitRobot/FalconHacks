@@ -1,0 +1,88 @@
+main {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 10vh;
+}
+
+main * {
+    font-size: 22px;
+    color: white;
+}
+
+h1 {
+    font-size: 57px;
+    color: white;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+.inline-highlight {
+    color: #88C0D0;
+}
+
+h3, h3 * {
+    font-size: 40px;
+}
+
+.bonus-points {
+    background-color: #5a4e9b;
+    border-radius: 18px;
+    padding: 7px 13px;
+    margin-left: 12px;
+    vertical-align: middle;
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 32px;
+}
+
+h5 {
+    font-size: 27px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.io-page {
+    background-color: #222222;
+    border: 2px solid black;
+    padding: 10px 10px 10px 20px;
+}
+
+pre {
+    margin: 10px;
+}
+
+#fccdiagram {
+    display: block;
+    margin-bottom: 25px;
+    width: 40vw;
+}
+
+.submit-link {
+    border-radius: 15px;
+    background-color: #5097ab;
+    padding: 5px 10px;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.submit-link:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 600px) {
+    .bonus-points {
+        display: block;
+        width: 145px;
+        margin-left: 0;
+    }
+
+    #fccdiagram {
+        width: 90vw;
+    }
+}
