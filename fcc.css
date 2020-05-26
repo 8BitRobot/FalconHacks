@@ -75,6 +75,15 @@ pre {
     transition: 0.3s;
 }
 
+.submissions-closed, .submissions-closed * {
+    font-size: 26px;
+    color: #88c0d0;
+}
+
+.red-closed {
+    color: red;
+}
+
 @media only screen and (max-width: 600px) {
     .bonus-points {
         display: block;
